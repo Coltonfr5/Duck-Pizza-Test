@@ -3,4 +3,6 @@
 **duck pizza is quite litterally peak robotics and is a right of passage.. so I am finally doing it :3**
 
 # How it works:
-**How the code works is that it takes 2 arrays that are "technically" linked together and checks which one is bigger, if it is then it becomes the next "king duck"**
+**It takes the current array value and checks if it is bigger than the "bestDuck" or current biggest number in pizza slices**
+
+**The main premise is for my robotics team and to prove I don't have to take 4 months on duckPizza**
