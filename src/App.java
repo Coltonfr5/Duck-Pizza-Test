@@ -1,26 +1,23 @@
 public class App {
     public static void main (String[] args) throws Exception {
-        int x = 0;
-        int p;
-        Duck obj = new Duck();      
+        Duck obj = new Duck(); // Creates the Duck.java stuff into App.java
+
+        // Uses the array getters to put the arrays into an exact copy array
         int[] pizza2 = obj.getNumArray();
-        String[] ducks2 = obj.getNumArray2();
+        String[] ducks2 = obj.getStringArray();
 
-        int largestnumber;
-        largestnumber = pizza2[0];
-        String BestDuck;
-        BestDuck = ducks2[0];
 
-        largestnumber = pizza2[0];
-        p = -1;
-       for (int i : pizza2) {
-            p = p + 1;
-            x = i;
-            if (x > largestnumber) {
-                largestnumber = x;
-                BestDuck = ducks2[p];
+        int largestNumber = pizza2[0];
+        String bestDuck = ducks2[0];
+        int i = -1;
+       for (int p : pizza2) {
+            i += 1;
+            if (p > largestNumber) { // Checks if the current pizza value is larger than the highest duck value
+                largestNumber = p;
+                bestDuck = ducks2[i];
             }
        }
-        System.out.println("The person with the largest amount of pizza is: " + BestDuck + " with the amount of " + largestnumber + " pizza slices!");
+        // Silly print command, ignore the longjevity of this.
+        System.out.println("The duck with the largest amount of pizza is: " + bestDuck + " with the amount of " + largestNumber + " pizza slices!");
     }
 }
