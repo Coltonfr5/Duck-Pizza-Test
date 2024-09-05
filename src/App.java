@@ -17,7 +17,7 @@ public class App {
                 bestDuck = ducks2[i];
             }
        }
-        // Silly print command, ignore the longjevity of this.
+        // Silly print command, ignore the longevity of this.
         System.out.println("The duck with the largest amount of pizza is: " + bestDuck + " with the amount of " + largestNumber + " pizza slices!");
     }
 }
